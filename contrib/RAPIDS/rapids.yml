@@ -9,7 +9,7 @@ channels:
 dependencies:
   - python=3.7
   - pytorch
-  - cudatoolkit=10.0
+  - cudatoolkit=10.1
   - dask-cuda=0.9.1
   - cudf=0.9.*
   - cuml=0.9.*
