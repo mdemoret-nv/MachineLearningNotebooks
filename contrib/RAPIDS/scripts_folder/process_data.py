@@ -463,7 +463,7 @@ def main():
     # TRAIN THE MODEL
     labels = None
     t1 = datetime.datetime.now()
-    bst = dxgb_gpu.train(client, dxgb_gpu_params, gpu_dfs, labels, num_boost_round=dxgb_gpu_params['nround'])
+    bst = dxgb_gpu.train(client, dxgb_gpu_params, gpu_dfs, labels, num_boost_round=dxgb_gpu_params['nround'], callbacks=[xgb.callback.print_evaluation])
     t2 = datetime.datetime.now()
     print('\n---->>>> Training time: {0} <<<<----\n'.format(str(t2-t1)))
     print('Exiting script')
