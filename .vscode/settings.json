@@ -1,3 +1,4 @@
 {
-  "python.pythonPath": "/home/mdemoret/anaconda3/envs/azureml/bin/python"
+  "python.pythonPath": "/anaconda/envs/azureml_py36/bin/python",
+  "python.dataScience.jupyterServerURI": "https://notebook-cpu.westus2.instances.azureml.net/"
 }
